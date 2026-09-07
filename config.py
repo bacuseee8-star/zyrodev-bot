@@ -3,7 +3,4 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-BOT_TOKEN = os.getenv("BOT_TOKEN")
-
-if not BOT_TOKEN:
-    raise ValueError("BOT_TOKEN belum diset di environment/.env")
+BOT_TOKEN = os.getenv("8747461164:AAHsawvQUr-djYWkP4fGSLdDSpyg00L7Ka4")
