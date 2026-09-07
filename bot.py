@@ -1,19 +1,11 @@
 import asyncio
 import logging
-import os
 import sqlite3
 
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters import CommandStart, Command
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from dotenv import load_dotenv
-
-load_dotenv()
-
-BOT_TOKEN = os.getenv("BOT_TOKEN")
-
-if not BOT_TOKEN:
-    raise ValueError("BOT_TOKEN belum diatur di file .env")
+from config import BOT_TOKEN
 
 logging.basicConfig(level=logging.INFO)
 
